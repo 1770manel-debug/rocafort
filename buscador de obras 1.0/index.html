@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Obras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Buscador de Obras</h1>
+    <button id="searchButton">Buscar</button>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Any</th>
+                <th>Trimestre</th>
+                <th>Pis</th>
+                <th>Obres</th>
+                <th>Empresa</th>
+                <th>Preu</th>
+                <th>Pressupost</th>
+            </tr>
+            <tr id="searchInputRow">
+                <th>
+                    <select id="anySearchInput">
+                        <option value="">Any</option>
+                    </select>
+                </th>
+                <th>
+                    <select id="trimestreSearchInput">
+                        <option value="">Trimestre</option>
+                    </select>
+                </th>
+                <th>
+                    <select id="pisSearchInput">
+                        <option value="">Pis</option>
+                    </select>
+                </th>
+                <th><input type="text" id="obresSearchInput" placeholder="Obres"></th>
+                <th>
+                    <select id="empresaSearchInput">
+                        <option value="">Empresa</option>
+                    </select>
+                </th>
+                <th><input type="text" id="preuSearchInput" placeholder="Preu"></th>
+                <th><input type="text" id="pressupostSearchInput" placeholder="Pressupost"></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
